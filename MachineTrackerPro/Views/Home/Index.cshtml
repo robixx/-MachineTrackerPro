@@ -1,0 +1,284 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+
+
+<!-- Hero Slider -->
+<section class="hero-section" id="home">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Added explicit background images -->
+            <div class="carousel-item active" style="background-image: url('images/img2.jpg');background-size: cover;
+    background-position: center;
+    height: 100vh;">
+                <div class="carousel-content">
+                    <h2>Welcome to Our Business</h2>
+                    <p>Delivering Excellence in Every Project</p>
+                    <button class="hero-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/img1.jpg');background-size: cover;
+    background-position: center;
+    height: 100vh;">
+                <div class="carousel-content">
+                    <h2>Innovative Solutions</h2>
+                    <p>Transform Your Business With Technology</p>
+                    <button class="hero-btn">Discover More</button>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/img3.jpg');background-size: cover;
+    background-position: center;
+    height: 100vh;">
+                <div class="carousel-content">
+                    <h2>Growth & Success</h2>
+                    <p>Building Your Future Together</p>
+                    <button class="hero-btn">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+            <button class="carousel-arrow" type="button" id="prevBtn" >
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            <button class="carousel-arrow" type="button" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>About Our Company</h2>
+                <p>We are a leading company dedicated to providing exceptional services and innovative solutions to our clients worldwide.</p>
+                <ul class="about-features">
+                    <li>Professional Team Expertise</li>
+                    <li>24/7 Customer Support</li>
+                    <li>Quality Assured Services</li>
+                    <li>Affordable Pricing</li>
+                    <li>Proven Track Record</li>
+                </ul>
+
+                <!-- Statistics -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number counter" data-target="250">0</div>
+                        <div class="stat-label">Complete Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number counter" data-target="500">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number counter" data-target="12">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Portfolio</h2>
+            <p>Showcasing Our Best Work</p>
+        </div>
+
+        <!-- Gallery Filters -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" onclick="filterGallery(event, 'all')">All</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'technology')">Technology</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'business')">Business</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'design')">Design</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="technology" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Tech Solution">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Tech Solution</div>
+                    <div class="gallery-category">Technology</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="business" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Business Growth">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Business Growth</div>
+                    <div class="gallery-category">Business</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="design" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Creative Design">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Creative Design</div>
+                    <div class="gallery-category">Design</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Innovation Hub">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Innovation Hub</div>
+                    <div class="gallery-category">Technology</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="business" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Strategic Plan">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Strategic Plan</div>
+                    <div class="gallery-category">Business</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="design" style="display: block;">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Brand Identity">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Brand Identity</div>
+                    <div class="gallery-category">Design</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>Comprehensive Solutions for Your Needs</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern websites that engage your audience and drive business growth.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Apps</h3>
+                    <p>Developing cutting-edge mobile applications for iOS and Android platforms.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure and scalable cloud infrastructure for your business needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategic marketing solutions to boost your online presence and reach.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Security</h3>
+                    <p>Protecting your data with enterprise-level security solutions.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Support</h3>
+                    <p>Round-the-clock support to ensure your operations run smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Location</h3>
+                <p>123 Business Street, City, Country</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-phone"></i></div>
+                <h3>Phone</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Email</h3>
+                <p>info@business.com</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+         $(document).ready(function() {
+        // Initialize carousel
+        $('#heroCarousel').carousel({
+            interval: 5000
+        });
+
+        // Next / Prev buttons
+        $('#nextBtn').click(function() {
+            $('#heroCarousel').carousel('next');
+        });
+
+        $('#prevBtn').click(function() {
+            $('#heroCarousel').carousel('prev');
+        });
+
+        // Dots navigation
+        $('.dot').click(function() {
+            const index = $(this).data('slide-to');
+            $('#heroCarousel').carousel(index);
+        });
+
+        // Update dots on slide
+        $('#heroCarousel').on('slide.bs.carousel', function (e) {
+            const index = $(e.relatedTarget).index();
+            $('.dot').removeClass('active');
+            $('.dot').eq(index).addClass('active');
+        });
+    });
+    $('#prevBtn').click(function() { $('#heroCarousel').carousel('prev'); });
+</script>

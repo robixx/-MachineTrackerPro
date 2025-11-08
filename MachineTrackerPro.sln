@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineTrackerPro", "MachineTrackerPro\MachineTrackerPro.csproj", "{CAC16F5D-D260-4E68-9CCD-66E96074929B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAC16F5D-D260-4E68-9CCD-66E96074929B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC16F5D-D260-4E68-9CCD-66E96074929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC16F5D-D260-4E68-9CCD-66E96074929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC16F5D-D260-4E68-9CCD-66E96074929B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01190351-404C-4078-9079-E551EB2B9670}
+	EndGlobalSection
+EndGlobal
