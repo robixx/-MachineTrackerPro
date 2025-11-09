@@ -3,90 +3,88 @@
 
 }
 
-
-
-<!-- Hero Slider -->
-<section class="hero-section" id="home">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Added explicit background images -->
-            <div class="carousel-item active" style="background-image: url('images/img2.jpg');background-size: cover;
-    background-position: center;
-    height: 100vh;">
-                <div class="carousel-content">
-                    <h2>Welcome to Our Business</h2>
-                    <p>Delivering Excellence in Every Project</p>
-                    <button class="hero-btn">Learn More</button>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('images/img1.jpg');background-size: cover;
-    background-position: center;
-    height: 100vh;">
-                <div class="carousel-content">
-                    <h2>Innovative Solutions</h2>
-                    <p>Transform Your Business With Technology</p>
-                    <button class="hero-btn">Discover More</button>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('images/img3.jpg');background-size: cover;
-    background-position: center;
-    height: 100vh;">
-                <div class="carousel-content">
-                    <h2>Growth & Success</h2>
-                    <p>Building Your Future Together</p>
-                    <button class="hero-btn">Get Started</button>
-                </div>
-            </div>
+<style>
+    .banner-caption{
+        color: #1e569b !important;
+    }
+</style>
+<!-- Banner / Slider Section -->
+<section id="home" class="banner-section" style="background-color: #f9fbff; ">
+    <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
         </div>
-
-        <!-- Carousel Controls -->
-        <div class="carousel-controls">
-            <button class="carousel-arrow" type="button" id="prevBtn" >
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="carousel-dots">
-                <span class="dot active" onclick="currentSlide(0)"></span>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/ba1.png?width=800&height=600" class="d-block w-100" alt="Banner 1">
+                <div class="carousel-caption banner-caption">
+                    <h1 class="banner-title animate-slide-up" >Welcome to TechVision</h1>
+                    <p class="banner-subtitle animate-slide-up">Transform Your Ideas into Reality</p>
+                    <button class="btn btn-light btn-lg animate-slide-up mt-3">Get Started</button>
+                </div>
             </div>
-            <button class="carousel-arrow" type="button" id="nextBtn">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+            <div class="carousel-item">
+                <img src="~/images/ba3.png?width=800&height=600" class="d-block w-100" alt="Banner 2">
+                <div class="carousel-caption banner-caption">
+                    <h1 class="banner-title animate-slide-up">Innovation at Scale</h1>
+                    <p class="banner-subtitle animate-slide-up">Building Tomorrow's Solutions Today</p>
+                    <button class="btn btn-light btn-lg animate-slide-up mt-3">Learn More</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/ba2.png?width=800&height=600" class="d-block w-100" alt="Banner 3">
+                <div class="carousel-caption banner-caption">
+                    <h1 class="banner-title animate-slide-up">Expert Solutions</h1>
+                    <p class="banner-subtitle animate-slide-up">Tailored for Your Success</p>
+                    <button class="btn btn-light btn-lg animate-slide-up mt-3">Explore</button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section class="about-section" id="about">
+<section id="about" class="about-section py-5">
     <div class="container">
-        <div class="about-content">
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="About Image">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title animate-fade-in">About Us</h2>
+            
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 animate-slide-left">
+                <img src="~/images/about.png?height=400&width=500" class="img-fluid rounded-lg shadow"
+                     alt="About Image">
             </div>
-            <div class="about-text">
-                <h2>About Our Company</h2>
-                <p>We are a leading company dedicated to providing exceptional services and innovative solutions to our clients worldwide.</p>
-                <ul class="about-features">
-                    <li>Professional Team Expertise</li>
-                    <li>24/7 Customer Support</li>
-                    <li>Quality Assured Services</li>
-                    <li>Affordable Pricing</li>
-                    <li>Proven Track Record</li>
-                </ul>
+            <div class="col-lg-6 animate-slide-right ps-lg-4">
+                <h3 class="mb-3">Who We Are</h3>
+                <p class="text-muted mb-3">
+                    Y TECH CNC is a trusted supplier of advanced CNC and laser machinery, serving manufacturing and woodworking industries for more than 8 years. We specialize in importing and delivering high-performance equipment, including CNC wood router machines, fiber laser cutting machines, and fiber laser welding machines.                 
 
-                <!-- Statistics -->
-                <div class="stats-container">
-                    <div class="stat-card">
-                        <div class="stat-number counter" data-target="250">0</div>
-                        <div class="stat-label">Complete Projects</div>
+                </p>
+                <p class="text-muted mb-3">
+                    From small workshops to large industrial production lines, our goal is to provide reliable technology that improves productivity, precision, and long-term value. We partner with globally recognized manufacturers to ensure every machine meets international quality standards.
+                </p>
+                <p class="text-muted mb-3">
+                    Our commitment doesn’t end with delivery — we provide full technical support, installation assistance, operator training, spare parts, and after-sales service to keep your machines running at peak performance.
+
+                    With 8 years of industry experience and a strong reputation for honesty and customer-focused service, Y TECH CNC continues to help businesses upgrade their capabilities and grow with confidence.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="feature-box">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <h5>Happy Clients</h5>
+                            <p>1200+ Certified professionals & Clients Satisfaction</p>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number counter" data-target="500">0</div>
-                        <div class="stat-label">Happy Clients</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number counter" data-target="12">0</div>
-                        <div class="stat-label">Years Experience</div>
+                    <div class="col-md-6">
+                        <div class="feature-box">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <h5>Experience</h5>
+                            <p>8 years Consistent delivery and support</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,64 +92,73 @@
     </div>
 </section>
 
-<!-- Gallery Section -->
-<section class="gallery-section" id="gallery">
+<!-- Profile / Team Section -->
+<section id="profile" class="profile-section py-5"
+         style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
     <div class="container">
-        <div class="section-title">
-            <h2>Our Portfolio</h2>
-            <p>Showcasing Our Best Work</p>
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title animate-fade-in">Our Team</h2>
+            <div class="title-underline"></div>
         </div>
-
-        <!-- Gallery Filters -->
-        <div class="gallery-filters">
-            <button class="filter-btn active" onclick="filterGallery(event, 'all')">All</button>
-            <button class="filter-btn" onclick="filterGallery(event, 'technology')">Technology</button>
-            <button class="filter-btn" onclick="filterGallery(event, 'business')">Business</button>
-            <button class="filter-btn" onclick="filterGallery(event, 'design')">Design</button>
-        </div>
-
-        <!-- Gallery Grid -->
-        <div class="gallery-grid">
-            <div class="gallery-item" data-category="technology" style="display: block;">
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Tech Solution">
-                <div class="gallery-overlay">
-                    <div class="gallery-title">Tech Solution</div>
-                    <div class="gallery-category">Technology</div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card animate-scale-in">
+                    <img src="/placeholder.svg?height=300&width=250" class="img-fluid rounded-top"
+                         alt="Team Member">
+                    <div class="team-info">
+                        <h5>John Smith</h5>
+                        <p class="text-muted">Lead Developer</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="gallery-item" data-category="business" style="display: block;">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Business Growth">
-                <div class="gallery-overlay">
-                    <div class="gallery-title">Business Growth</div>
-                    <div class="gallery-category">Business</div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card animate-scale-in">
+                    <img src="/placeholder.svg?height=300&width=250" class="img-fluid rounded-top"
+                         alt="Team Member">
+                    <div class="team-info">
+                        <h5>Sarah Johnson</h5>
+                        <p class="text-muted">UI/UX Designer</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="gallery-item" data-category="design" style="display: block;">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Creative Design">
-                <div class="gallery-overlay">
-                    <div class="gallery-title">Creative Design</div>
-                    <div class="gallery-category">Design</div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card animate-scale-in">
+                    <img src="/placeholder.svg?height=300&width=250" class="img-fluid rounded-top"
+                         alt="Team Member">
+                    <div class="team-info">
+                        <h5>Michael Chen</h5>
+                        <p class="text-muted">Project Manager</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-slack"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="gallery-item" data-category="technology" style="display: block;">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Innovation Hub">
-                <div class="gallery-overlay">
-                    <div class="gallery-title">Innovation Hub</div>
-                    <div class="gallery-category">Technology</div>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="business" style="display: block;">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Strategic Plan">
-                <div class="gallery-overlay">
-                    <div class="gallery-title">Strategic Plan</div>
-                    <div class="gallery-category">Business</div>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="design" style="display: block;">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Brand Identity">
-                <div class="gallery-overlay">
-                    <div class="gallery-title">Brand Identity</div>
-                    <div class="gallery-category">Design</div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card animate-scale-in">
+                    <img src="/placeholder.svg?height=300&width=250" class="img-fluid rounded-top"
+                         alt="Team Member">
+                    <div class="team-info">
+                        <h5>Emily Davis</h5>
+                        <p class="text-muted">QA Specialist</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,54 +166,136 @@
 </section>
 
 <!-- Services Section -->
-<section class="services-section" id="services">
+<section id="service" class="service-section py-5">
     <div class="container">
-        <div class="section-title">
-            <h2>Our Services</h2>
-            <p>Comprehensive Solutions for Your Needs</p>
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title animate-fade-in">Our Services</h2>
+            <div class="title-underline"></div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card animate-lift">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h5>Web Development</h5>
+                    <p>
+                        Custom web solutions built with the latest technologies and best practices for optimal
+                        performance.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card animate-lift">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h5>UI/UX Design</h5>
+                    <p>
+                        Beautiful and intuitive designs that create engaging user experiences and drive conversions.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card animate-lift">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h5>Mobile Apps</h5>
+                    <p>Native and cross-platform mobile applications tailored to your business needs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card animate-lift">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h5>Cloud Solutions</h5>
+                    <p>Scalable and secure cloud infrastructure to support your growing business.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card animate-lift">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Security</h5>
+                    <p>Comprehensive security solutions to protect your applications and data.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card animate-lift">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h5>Support & Maintenance</h5>
+                    <p>24/7 technical support and ongoing maintenance for your applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-laptop"></i></div>
-                    <h3>Web Development</h3>
-                    <p>Creating responsive and modern websites that engage your audience and drive business growth.</p>
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title animate-fade-in">Our Work</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gallery-card animate-zoom">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid w-100" alt="Portfolio 1">
+                    <div class="gallery-overlay">
+                        <h6>Web Design</h6>
+                        <p>Modern Responsive Website</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Mobile Apps</h3>
-                    <p>Developing cutting-edge mobile applications for iOS and Android platforms.</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gallery-card animate-zoom">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid w-100" alt="Portfolio 2">
+                    <div class="gallery-overlay">
+                        <h6>Mobile App</h6>
+                        <p>iOS Application Design</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Secure and scalable cloud infrastructure for your business needs.</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gallery-card animate-zoom">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid w-100" alt="Portfolio 3">
+                    <div class="gallery-overlay">
+                        <h6>E-Commerce</h6>
+                        <p>Online Store Platform</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Digital Marketing</h3>
-                    <p>Strategic marketing solutions to boost your online presence and reach.</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gallery-card animate-zoom">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid w-100" alt="Portfolio 4">
+                    <div class="gallery-overlay">
+                        <h6>Dashboard</h6>
+                        <p>Analytics Platform</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Security</h3>
-                    <p>Protecting your data with enterprise-level security solutions.</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gallery-card animate-zoom">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid w-100" alt="Portfolio 5">
+                    <div class="gallery-overlay">
+                        <h6>Social Media</h6>
+                        <p>Community Platform</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-headset"></i></div>
-                    <h3>Support</h3>
-                    <p>Round-the-clock support to ensure your operations run smoothly.</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gallery-card animate-zoom">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid w-100" alt="Portfolio 6">
+                    <div class="gallery-overlay">
+                        <h6>Enterprise</h6>
+                        <p>Business Management System</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,71 +303,64 @@
 </section>
 
 <!-- Contact Section -->
-<section class="contact-section" id="contact">
+<section id="contact" class="contact-section py-5">
     <div class="container">
-        <div class="section-title">
-            <h2>Get In Touch</h2>
-            <p>We'd love to hear from you</p>
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title animate-fade-in">Get In Touch</h2>
+            <div class="title-underline"></div>
         </div>
-
-        <!-- Contact Info -->
-        <div class="contact-info">
-            <div class="info-card">
-                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                <h3>Location</h3>
-                <p>123 Business Street, City, Country</p>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="contact-card animate-slide-left">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5>Address</h5>
+                    <p>123 Tech Street<br>Silicon Valley, CA 94025<br>United States</p>
+                </div>
             </div>
-            <div class="info-card">
-                <div class="info-icon"><i class="fas fa-phone"></i></div>
-                <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
+            <div class="col-lg-4 mb-4">
+                <div class="contact-card animate-slide-left">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5>Phone</h5>
+                    <p>+1 (555) 123-4567<br>+1 (555) 987-6543<br>Available 24/7</p>
+                </div>
             </div>
-            <div class="info-card">
-                <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                <h3>Email</h3>
-                <p>info@business.com</p>
+            <div class="col-lg-4 mb-4">
+                <div class="contact-card animate-slide-left">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5>Email</h5>
+                    <p>info@techvision.com<br>support@techvision.com<br>careers@techvision.com</p>
+                </div>
             </div>
         </div>
-
-        <!-- Contact Form -->
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <form class="contact-form animate-fade-in" id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name"
+                                   required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your Email"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message"
+                                  required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script>
-         $(document).ready(function() {
-        // Initialize carousel
-        $('#heroCarousel').carousel({
-            interval: 5000
-        });
-
-        // Next / Prev buttons
-        $('#nextBtn').click(function() {
-            $('#heroCarousel').carousel('next');
-        });
-
-        $('#prevBtn').click(function() {
-            $('#heroCarousel').carousel('prev');
-        });
-
-        // Dots navigation
-        $('.dot').click(function() {
-            const index = $(this).data('slide-to');
-            $('#heroCarousel').carousel(index);
-        });
-
-        // Update dots on slide
-        $('#heroCarousel').on('slide.bs.carousel', function (e) {
-            const index = $(e.relatedTarget).index();
-            $('.dot').removeClass('active');
-            $('.dot').eq(index).addClass('active');
-        });
-    });
-    $('#prevBtn').click(function() { $('#heroCarousel').carousel('prev'); });
-</script>

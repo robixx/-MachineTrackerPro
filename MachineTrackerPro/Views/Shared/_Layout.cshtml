@@ -3,56 +3,112 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - GreenBusiness</title>
+    <title>@ViewData["Title"] - Y TECH CNC</title>
+    <link rel="shortcut icon" href="~/images/logo2.svg">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/custom/styles.css" asp-append-version="true" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#home">
-                    <i class="fas fa-leaf"></i> GreenBusiness
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(199 217 239)">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img alt="logo" src="~/images/logo2.png" style="width:40px;" />&nbsp;
+                <span class="fw-bold">  Y TECH CNC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#login">
+                            <button class="btn btn-primary btn-sm px-3">Login</button>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
 
     @RenderBody()
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer py-5" style="background-color:#f7faff; color: #194b9f;">
         <div class="container">
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-                <a href="#privacy">Privacy Policy</a>
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="mb-3">About Company</h6>
+                    <p class="text-muted small">
+                        We are dedicated to providing innovative solutions that help businesses
+                        thrive in the digital world.
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#home" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="#service" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="mb-3">Services</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-muted text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Mobile Apps</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">UI/UX Design</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="mb-3">Newsletter</h6>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-sm" placeholder="Your email">
+                            <button class="btn btn-primary btn-sm" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <p>&copy; @DateTime.Now.Year MachineriesBusiness. All Rights Reserved.</p>
+            <hr class="bg-secondary">
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p class="small text-muted">&copy; 2025 TechVision. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="small text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="small text-muted text-decoration-none">Terms & Conditions</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
